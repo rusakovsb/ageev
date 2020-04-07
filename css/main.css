@@ -215,7 +215,7 @@ img {
 .scrollbar-inner > .scroll-element .scroll-bar {
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
-    border-radius: !important;
+    border-radius: 0 !important;
 }
 
 .scrollbar-inner > .scroll-element .scroll-element_track {
