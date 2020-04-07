@@ -1,0 +1,107 @@
+/*-------------------------------------------*
+/* Colors
+/*-------------------------------------------*/
+
+body {
+    color: #5b5c5d;
+}
+
+a {
+    color: #36415a;
+}
+
+a:hover {
+    color: #42547c;
+}
+
+#sidebar {
+    background-color: #fff; 
+}
+
+#wrapper,
+.button,
+.region-mobile-panel {
+    background-color: #2a3141;
+}
+
+#main {
+    background-color: #f6f7f9;
+}
+
+.animated-site-name,
+h1, h2, h3, h4, h5, h6, 
+.block-title,
+#sidebar .phone,
+.view-team .views-field-title {
+    color: #2a3141;
+}
+
+#header,
+#header a,
+#contact-button,
+input.form-submit,
+input.form-submit:hover,
+input.form-submit:active,
+input.form-submit:focus,
+#footer,
+#footer a,
+#mobile-panel,
+#mobile-panel a {
+    color: #fff;
+}
+
+#header a:hover {
+    color: #d3d5d9;
+}
+
+#header a.is-active,
+#mobile-panel a.is-active,
+.breadcrumb ol {
+    color: #acadaf;
+}
+
+.animated-site-slogan,
+.description {
+    color: #6d6e70;
+}
+
+.animated-logo__line {
+    background-color: #acadaf;
+}
+
+input,
+select,
+textarea {
+    color: #5b5c5d;
+}
+
+input.form-text,
+input.form-email,
+input.form-password,
+textarea {
+    border: 2px #d4d6d8 solid;
+}
+
+input.form-text:focus,
+input.form-email:focus,
+input.form-password:focus,
+textarea:focus {
+    border: 2px #acadaf solid;
+}
+
+input.form-submit:hover,
+input.form-submit:active,
+input.form-submit:focus {
+	background-color: #36415a;
+}
+
+#menu-icon span,
+#menu-close-icon span {
+    background-color: #fff; 
+}
+
+#popup-close span {
+    background-color: #acadaf;
+}
+
+

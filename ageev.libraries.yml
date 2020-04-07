@@ -1,0 +1,18 @@
+global-styling:
+  css:
+    theme:
+      css/main.css: {}
+      css/views.css: {}
+      css/colors.css: {}
+      css/jquery.scrollbar.css: {}
+      css/mobilepanel.css: {}
+      css/responsive.css: {}
+  js:
+    js/tweenmax.js: {}
+    js/jquery.scrollbar.js: {} 
+    js/mobilepanel.js: {}    
+    js/main.js: {}
+    js/smoothscroll.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

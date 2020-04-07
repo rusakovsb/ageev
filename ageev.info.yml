@@ -1,0 +1,20 @@
+name: Ageev
+type: theme
+description: 'Ageev theme'
+package: Core
+
+libraries:
+  - ageev/global-styling
+
+regions:
+  sidebar: 'Sidebar'
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
+  mobile_panel: 'Mobile Panel'
+  popup: 'Popup'
+
+# Information
+core: '8.x'
+project: 'drupal'
+

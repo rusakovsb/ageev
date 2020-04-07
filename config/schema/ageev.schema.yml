@@ -1,0 +1,5 @@
+# Schema for the configuration files.
+
+ageev.settings:
+  type: ageev_settings
+  label: 'Ageev settings'

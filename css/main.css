@@ -1,0 +1,685 @@
+/*-------------------------------------------*
+/* Fonts
+/*-------------------------------------------*/
+
+@font-face {
+	font-family: 'Futura';
+	src: url('../fonts/FuturaLightC.eot');
+	src: local('Futura Light Cyrillic'), local('FuturaLightC'),
+		url('../fonts/FuturaLightC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaLightC.woff') format('woff'),
+		url('../fonts/FuturaLightC.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url('../fonts/FuturaBookC.eot');
+	src: local('Futura Book Cyrillic'), local('FuturaBookC'),
+		url('../fonts/FuturaBookC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaBookC.woff') format('woff'),
+		url('../fonts/FuturaBookC.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url('../fonts/FuturaDemiC.eot');
+	src: local('Futura Demi Cyrillic'), local('FuturaDemiC'),
+		url('../fonts/FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaDemiC.woff') format('woff'),
+		url('../fonts/FuturaDemiC.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/*-------------------------------------------*
+/* Base
+/*-------------------------------------------*/
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    background-color: transparent;
+    border: none;
+    outline: none !important;
+}
+
+html {
+    height: 100%;
+    font-size: 22px;
+}
+
+
+body {
+    height: 100%;
+    font-family: 'Futura';
+    font-weight: normal;
+	font-style: normal;    
+    line-height: normal;
+	letter-spacing: 1px;
+}
+
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+main, 
+nav, 
+section, 
+summary {
+    display: block;
+}
+
+ul,
+ul li {
+	list-style: none;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+p {
+    margin: 0 0 30px 0;
+}
+
+em {
+	font-style: italic;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+button {  	
+	cursor: pointer;
+    vertical-align: middle;
+}
+
+
+a {
+    text-decoration: none;    
+    transition: 0.2s ease-out;
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*-------------------------------------------*
+/* Layout
+/*-------------------------------------------*/
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 497;
+    bottom: 0;
+    width: 480px;   
+}
+
+.region-sidebar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: absolute;
+    top: 30px;  
+    right: 80px; 
+    bottom: 30px;
+    left: 80px;
+}
+
+#wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 560px;
+}
+
+#header,
+#footer {
+    padding: 0 80px;
+    position: absolute;
+    z-index: 498;
+    right: 0;
+    left: 0;
+    margin: 0;  
+}
+
+.region-header,
+.region-footer {
+    height: 80px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;    
+}
+
+#header {
+    top: 0;
+}
+
+#main {
+    position: absolute;
+    z-index: 499;
+    top: 80px;
+    right: 80px;
+    bottom: 80px;
+    left: -80px;
+}
+
+#footer {
+    bottom: 0;
+    margin: 0;
+}
+
+/*-------------------------------------------*
+/* Scrollbar
+/*-------------------------------------------*/
+
+#main .scrollbar-inner {
+    height: 100%;
+}
+
+.region-content {
+    padding: 80px;
+}
+
+#main .scrollbar-inner > .scroll-element.scroll-y {
+    right: 0 !important;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_outer, 
+.scrollbar-inner > .scroll-element .scroll-element_track, 
+.scrollbar-inner > .scroll-element .scroll-bar {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: !important;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_track {
+  background-color: #acadaf !important;
+}
+
+.scrollbar-inner > .scroll-element .scroll-bar {
+  background-color: #2a3141 !important;
+}
+
+.scrollbar-inner > .scroll-element:hover .scroll-bar {
+  background-color: #2a3141 !important;
+}
+
+/*-------------------------------------------*
+/* Animated Logo
+/*-------------------------------------------*/
+
+#block-main-animated-logo {
+    display: none;
+}
+
+#block-animated-logo,
+#block-main-animated-logo {
+    text-align: center;
+}
+
+.animated-logo {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.animated-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.animated-logo__letter-grey {
+    position: absolute;
+    bottom: 0;
+    left: 95px;
+    width: 60px;
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
+    will-change: transform;
+}
+
+.animated-logo__letter-blue {
+    margin-left: 128px;
+    width: 75px;
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
+    will-change: transform;
+}
+
+.animated-logo__line {
+    position: absolute;
+    bottom: 36px;
+    left: 69px;
+    width: 87px;
+    height: 3px;
+    opacity: 0;
+    transform: translate3d(-60px, 0, 0);
+    will-change: transform;
+}
+
+.animated-site-name,
+.animated-site-slogan {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.animated-site-name {
+    margin: 10px 0 5px 0; 
+    font-size: 1.318181rem;
+}
+
+.animated-site-name span {
+    display: inline-block;
+    opacity: 0;
+    transform: translate3d(0, 15px, 0);
+    will-change: transform;
+}
+
+.animated-site-slogan  {
+    font-size: 0.636363rem;
+    opacity: 0;
+    transform: translate3d(0, 15px, 0);
+    will-change: transform;
+}
+
+/*-------------------------------------------*
+/* Site branding
+/*-------------------------------------------*/
+
+#block-site-branding {
+    display: none;
+}
+
+/*-------------------------------------------*
+/* Contacts
+/*-------------------------------------------*/
+
+.phone {  
+    display: block;
+    font-weight: bold;  
+    margin: 5px 0 0 0;
+}
+
+/*-------------------------------------------*
+/* Breadcrumb
+/*-------------------------------------------*/
+
+.breadcrumb ol {
+    list-style: none;
+    margin: 0 0 40px 0;
+}
+
+.breadcrumb ol li {  
+    display: inline;  
+}
+
+.breadcrumb ol li:after {  
+    content: "/";
+}
+
+.breadcrumb ol li:last-child:after {  
+    display: none; 
+}
+
+/*-------------------------------------------*
+/* Headings
+/*-------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {	
+    font-weight: bold;
+    line-height: 1.2;
+	letter-spacing: 5px;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+    font-size: 2rem; 	
+}
+
+h2 {
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+    font-size: 1.545454rem;
+}
+
+h3 {
+    margin: 0 0 30px 0;
+	font-size: 1.363636rem;       
+}
+
+h4 {
+    margin: 0 0 15px 0;
+    font-size: 1.181818rem;
+}
+
+h5 {
+    margin: 0 0 10px 0;
+    font-size: 1.090909rem;
+}
+
+h6 {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+}
+
+.block-title {
+    margin: 0 0 15px 0;
+    font-size: 1.181818rem;
+    text-transform: uppercase; 
+    font-weight: bold;  
+    letter-spacing: 5px;
+}
+
+/*-------------------------------------------*
+/* Tabs
+/*-------------------------------------------*/
+
+ul.tabs {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 20px 0;
+}
+
+ul.primary {
+    background-color: #fff;
+}
+
+ul.primary li a {
+	display: block;
+	padding: 7px 15px;
+	position: relative;
+}
+
+ul.primary li a.is-active:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: -3px;
+	left: 0;
+}
+
+.action-links li {
+	margin: 0;
+	padding: 0;
+    list-style: none;
+}
+
+/*-------------------------------------------*
+/* Main Menu
+/*-------------------------------------------*/
+
+#block-main-menu ul.menu {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#block-main-menu ul.menu li {
+    padding: 0 30px 0 0;
+}
+
+.menu--main a {
+	display: block;
+    text-transform: uppercase;
+}
+
+/*-------------------------------------------*
+/* Content
+/*-------------------------------------------*/
+
+.node__content {
+    opacity: 0;
+    line-height: 1.3;
+}
+
+.node__content ul {
+	margin: 0 0 30px 0;
+    padding: 0;
+	list-style: none;
+}
+
+.node__content ul li {
+	position: relative;
+	margin: 0 0 5px 0;
+    padding: 0 0 0 30px;    
+    opacity: 0;
+    transform: translate3d(-60px, 0, 0);
+    will-change: transform;
+}
+
+.node__content ul li:first-letter {
+	text-transform: uppercase;
+}
+
+.node__content ul li:before {
+    display: block;
+    position: absolute;
+    content: "—";
+    top: 0;
+    left: 0;    
+}
+
+.node__content ul li p {
+	margin: 0;
+}
+
+.node__content ol  {
+	margin: 0 0 30px 0;
+    padding: 0;
+}
+
+.node__content ol li  {
+	margin: 0 0 10px 30px;
+    padding: 0 0 0 5px;
+}
+
+/*-------------------------------------------*
+/* Forms, Buttons
+/*-------------------------------------------*/
+
+label {
+    display: block;
+    margin: 0 0 5px 0;
+}
+
+.form-item {
+    margin: 0 0 20px 0;
+}
+
+input.form-text,
+input.form-email,
+input.form-password,
+textarea {
+	font-family: 'Futura';
+    font-size: 1rem;
+	letter-spacing: 1px;
+    font-weight: normal;    
+    border: 1px #d1d1d1 solid;
+    padding: 7px;
+    width: 100%;
+	transition: 0.2s ease-out;
+}
+
+input.form-submit {
+	font-family: 'Futura';
+    font-size: 1rem;
+	letter-spacing: 1px;
+    font-weight: normal;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 15px 30px;
+	transition: 0.2s ease-out;
+}
+
+#contact-button {
+	font-family: 'Futura';
+    font-size: 1.181818rem;
+	letter-spacing: 1px;
+    font-weight: normal;
+	padding: 0 0 0 40px;
+	background-image: url(../images/message.svg);
+    background-repeat: no-repeat;
+    background-size: 26px auto;
+	background-position: 0 50%;
+	position: relative;	
+}
+
+.description {
+    font-size: 0.818181rem;
+}
+
+/*-------------------------------------------*
+/* Footer
+/*-------------------------------------------*/
+
+#block-dev {
+    font-size: 0.636363rem;
+}
+
+/*-------------------------------------------*
+/* Popup
+/*-------------------------------------------*/
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 100%; 
+}
+
+#popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.7);  
+}
+
+.region-popup {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 500px;
+    background: #fff;  
+    padding: 60px 20px 20px 20px;
+    overflow-y: auto;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+#popup-close {
+    position: absolute;
+    width: 25px;
+    height: 25px;	
+    top: 20px;
+    right: 20px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#popup-close span {
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    left: 0; 
+    top: 50%;
+}
+
+#popup-close span:nth-child(1) {
+    transform: rotate(-45deg);
+}
+
+#popup-close span:nth-child(2) { 
+    transform: rotate(45deg);
+}
+
+/*-------------------------------------------*
+/* Messages
+/*-------------------------------------------*/
+
+.messages {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 5px solid;
+    border-radius: 0;
+    margin: 0 0 30px 0;
+    padding: 15px;
+}
+
+.messages--status {
+    color: #259f61;
+    background-color: #effff7;
+    border-color: #259f61;
+}
+
+.messages--warning {
+    color: #f7a34a;
+    background-color: #fff7ef;
+    border-color: #f7a34a;
+}
+
+.messages--error {
+    color: #cc2c2c;
+    background-color: #ffefef;
+    border-color: #cc2c2c;
+}
+
+.messages--error:before {
+    color: #cc2c2c;
+}
+
+.messages--status,
+.messages--warning,
+.messages--error {
+    background-image: none;
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
